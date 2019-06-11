@@ -1,19 +1,20 @@
-//
-//  ViewController.swift
-//  20190612_checkwork
-//
-//  Created by Fumiya Tanaka on 2019/06/11.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    var label: UILabel!
+    var number: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func plus() {
+        number += 1
+    }
+    
+    @IBAction func minus() {
+        number -= 1
+        label.text = number
+    }
 }
-
