@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var label: UILabel!
+    @IBOutlet var label: UILabel!
     var number: Int = 0
     
     override func viewDidLoad() {
@@ -10,11 +10,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func plus() {
-        number += 1
+        number = 1
     }
     
     @IBAction func minus() {
-        number -= 1
+        number = 1
         label.text = number
     }
 }
