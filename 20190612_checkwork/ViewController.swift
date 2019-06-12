@@ -10,11 +10,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func plus() {
-        number = 1
+        number += 1
     }
     
     @IBAction func minus() {
-        number = 1
-        label.text = number
+        number -= 1
+        label.text = String(number)
     }
 }
